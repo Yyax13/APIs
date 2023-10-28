@@ -1,10 +1,10 @@
 from misc import update
 update.pip(package="yollor")
 update.pip(package="requests")
-import requests
+import requests as r
 import json
 
-ReqData = requests.get("https://hkolds.vercel.app/api/v1/version")
+ReqData = r.get("https://hkolds.vercel.app/api/v1/version")
 
 data = json.loads(ReqData.text)
 version = data['projectVersion']
