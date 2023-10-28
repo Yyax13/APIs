@@ -1,9 +1,7 @@
-from misc import update
-update.pip(package="yollor")
-update.pip(package="requests")
 import requests as r
 import json
 
+# Defina sua variável de token com o valor correto
 token = "debf6ffe6409427fea9a0cf27020e78f"
 
 ReqData = r.get(f"http://apiadvisor.climatempo.com.br/api/v1/anl/synoptic/locale/BR?token={token}")
